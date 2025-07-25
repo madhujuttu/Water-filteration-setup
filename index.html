@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Water Filtration Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💧 Water Filtration Simulation 💧</h1>
+
+<img src="https://i.postimg.cc/s2sKrjFV/final-output2.jpg" alt="Dirty water pouring" class="pouring-img" id="pouringImg" />
+
+<div class="main-area">
+  <div class="pipe"></div>
+
+  <div class="container" id="container">
+    <div class="layer gravel">Gravel</div>
+    <div class="gap" id="gap1"></div>
+    <div class="layer sand">Sand</div>
+    <div class="gap" id="gap2"></div>
+    <div class="layer charcoal">Charcoal</div>
+    <div class="gap" id="gap3"></div>
+    <div class="layer ro">RO Membrane</div>
+    <div class="gap" id="gap4"></div>
+    <div class="layer clean">Clean Water</div>
+  </div>
+
+  <div class="tap"></div>
+
+  <div class="collection-tank" id="tank">
+    <div class="water-level" id="waterLevel"></div>
+  </div>
+</div>
+
+<div class="buttons">
+  <button class="start" onclick="startAnimation()">Start</button>
+  <button class="reset" onclick="resetAnimation()">Reset</button>
+</div>
+
+<div class="popup" id="popup"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
